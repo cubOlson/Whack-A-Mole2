@@ -8,16 +8,18 @@
 }
 .wgs__mole-head {
     position: absolute;
+    top: 30px;
     left: 55px;
     height: 188px;
     width: 188px;
     transition-property: margin-top;
     transition-duration: .25s;
+    transition: transform .3s;
 }
 
 .wgs__dirt-pile {
     position: absolute;
-    top: 131px;
+    top: 161px;
     height: 110px;
     width: 320px;
 }
@@ -31,5 +33,35 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
 }
+
+h1 {
+    font-size: 5em;
+    color: #46e21f;
+    font-family: 'Architects Daughter', cursive;
+}
+
+body {
+    background-color: #418521;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* .wgs__mole-head:focus {
+    transform: rotate(900deg) translate(0, 50px);
+} */
+
+.wgs__mole-head--death {
+    transform: rotate(360deg) translate(0, 50px);
+}
+
+
 
 
